@@ -1,4 +1,7 @@
-#~""" doc - примитивный документ """
+#!/usr/bin/env python2.7
+# -*- coding: UTF-8 -*-
+
+#~""" doc - РїСЂРёРјРёС‚РёРІРЅС‹Р№ РґРѕРєСѓРјРµРЅС‚ """
 from OFS import SimpleItem,ObjectManager,PropertyManager,Folder,Image
 from PIL import Image as AImage,ImageDraw
 
@@ -26,8 +29,8 @@ class DImage(Image.Image):
     meta_type = 'DImage'
 
     manage_options =  (
-    #{'label': 'Просмотр', 'action': 'index_html',},
-    {'label': 'Изменить', 'action': 'manage_editForm',},    
+    #{'label': 'РџСЂРѕСЃРјРѕС‚СЂ', 'action': 'index_html',},
+    {'label': 'РР·РјРµРЅРёС‚СЊ', 'action': 'manage_editForm',},    
     )    + Image.Image.manage_options
 
 #    index_html = DTMLFile('www/index_html',        globals()) # Used to view content of the object
