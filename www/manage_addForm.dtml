@@ -1,0 +1,17 @@
+<html>
+<dtml-var manage_tabs>
+<form name="form" action="manage_addImageAction" method="post">
+<table>
+<tr><td>Id:<td>
+<input type="text" name="id:string" size="30">
+<tr><td>Title:<td>
+<input type="text" name="title:string" size="30">
+<tr><td>Width:<td>
+<input type="text" name="width:int" size="30">
+<tr><td>Height:<td>
+<input type="text" name="height:int" size="30">
+</table>
+<input type="submit" name="submit">
+
+</form>
+</html>
